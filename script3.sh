@@ -9,7 +9,7 @@ then
 echo "Num1 is lowest num2"
 elif [ $number1 -gt $number2 ]
 then 
-echo "Num1 is highest num2"
+echo "Num1 is gratest num2"
 else
 echo "This is not number!"
 fi
@@ -20,4 +20,17 @@ fi
 # -le <=
 # -lt <
 # -ne not equal
+
+f=$1
+s=$2
+
+if [[ $f = $s ]]
+then
+        echo 'Yes'
+        exit 0
+else
+        echo 'No'
+        exit 1
+fi
+
 
